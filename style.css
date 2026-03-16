@@ -1,0 +1,119 @@
+/* PAGE BACKGROUND */
+
+body{
+    background:black;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:center;
+    margin:0;
+    padding:0;
+}
+
+
+/* TITLE */
+
+.title{
+    margin-top:40px;
+    font-size:40px;
+    letter-spacing:3px;
+    color:#00ffcc;
+}
+
+
+/* SONG GRID LAYOUT (2 x 2) */
+
+.container{
+    display:grid;
+    grid-template-columns:250px 250px;
+    grid-gap:40px;
+    justify-content:center;
+    margin-top:60px;
+}
+
+
+/* SONG CARD */
+
+.card{
+    background:#111;
+    border:2px solid #444;
+    border-radius:15px;
+    padding:20px;
+    width:250px;
+    text-align:center;
+    transition:0.3s;
+}
+
+
+/* CARD HOVER EFFECT */
+
+.card:hover{
+    transform:scale(1.05);
+    border-color:#00ffcc;
+}
+
+
+/* SONG IMAGE */
+
+.card img{
+    width:100%;
+    border-radius:10px;
+    border:2px solid #333;
+}
+
+
+/* SONG TITLE */
+
+.card h2{
+    margin-top:15px;
+    font-size:18px;
+    color:white;
+}
+
+
+/* PLAYER PAGE */
+
+.player{
+    width:650px;
+    margin:auto;
+    margin-top:40px;
+}
+
+
+/* SONG IMAGE FRAME */
+
+.cover{
+    width:300px;
+    border-radius:15px;
+    margin:20px;
+    border:3px solid #00ffcc;
+}
+
+
+/* AUDIO PLAYER */
+
+audio{
+    width:100%;
+    margin:20px 0;
+}
+
+
+/* LYRICS TITLE */
+
+.player h2{
+    margin-top:30px;
+    color:#00ffcc;
+}
+
+
+/* LYRICS BOX */
+
+#lyricsBox{
+    background:#111;
+    padding:20px;
+    border-radius:10px;
+    border:1px solid #333;
+    white-space:pre-wrap;
+    max-height:400px;
+    overflow-y:auto;
+    text-align:left;
+}
