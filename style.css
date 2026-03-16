@@ -1,119 +1,108 @@
-/* PAGE BACKGROUND */
-
 body{
-    background:black;
-    color:white;
-    font-family:Arial, Helvetica, sans-serif;
-    text-align:center;
-    margin:0;
-    padding:0;
+background:black;
+font-family:Arial, Helvetica, sans-serif;
+margin:0;
+padding:0;
+color:white;
+text-align:center;
 }
 
-
-/* TITLE */
-
-.title{
-    margin-top:40px;
-    font-size:40px;
-    letter-spacing:3px;
-    color:#00ffcc;
-}
-
-
-/* SONG GRID LAYOUT (2 x 2) */
+/* MAIN CONTAINER */
 
 .container{
-    display:grid;
-    grid-template-columns:250px 250px;
-    grid-gap:40px;
-    justify-content:center;
-    margin-top:60px;
+width:90%;
+max-width:600px;
+margin:auto;
+margin-top:40px;
 }
 
+/* HOMEPAGE SONG LIST */
 
-/* SONG CARD */
-
-.card{
-    background:#111;
-    border:2px solid #444;
-    border-radius:15px;
-    padding:20px;
-    width:250px;
-    text-align:center;
-    transition:0.3s;
+.song-list{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:15px;
+margin-top:40px;
 }
 
+/* SONG TILE */
 
-/* CARD HOVER EFFECT */
-
-.card:hover{
-    transform:scale(1.05);
-    border-color:#00ffcc;
+.song-tile{
+display:flex;
+align-items:center;
+gap:15px;
+width:360px;
+padding:10px 15px;
+background:#111;
+border:1px solid #333;
+border-radius:8px;
+text-decoration:none;
+transition:0.3s;
 }
 
-
-/* SONG IMAGE */
-
-.card img{
-    width:100%;
-    border-radius:10px;
-    border:2px solid #333;
+.song-tile:hover{
+background:#1a1a1a;
+border-color:#00ffff;
+transform:scale(1.03);
 }
 
+/* SONG THUMBNAIL */
 
-/* SONG TITLE */
-
-.card h2{
-    margin-top:15px;
-    font-size:18px;
-    color:white;
+.song-tile img{
+width:60px;
+height:60px;
+object-fit:cover;
+border-radius:6px;
 }
 
+/* SONG NAME */
 
-/* PLAYER PAGE */
-
-.player{
-    width:650px;
-    margin:auto;
-    margin-top:40px;
+.song-tile span{
+color:white;
+font-size:16px;
+letter-spacing:0.5px;
 }
 
+/* SONG PAGE IMAGE */
 
-/* SONG IMAGE FRAME */
-
-.cover{
-    width:300px;
-    border-radius:15px;
-    margin:20px;
-    border:3px solid #00ffcc;
+.song-image{
+width:280px;
+margin:auto;
+margin-top:20px;
+border-radius:12px;
+border:3px solid #333;
+box-shadow:0 0 15px #111;
 }
-
 
 /* AUDIO PLAYER */
 
 audio{
-    width:100%;
-    margin:20px 0;
+width:100%;
+margin-top:20px;
 }
-
-
-/* LYRICS TITLE */
-
-.player h2{
-    margin-top:30px;
-    color:#00ffcc;
-}
-
 
 /* LYRICS BOX */
 
-#lyricsBox{
-    background:#111;
-    padding:20px;
-    border-radius:10px;
-    border:1px solid #333;
-    white-space:pre-wrap;
-    max-height:400px;
-    overflow-y:auto;
-    text-align:left;
+.lyrics-box{
+margin-top:30px;
+padding:20px;
+background:#111;
+border:1px solid #333;
+border-radius:10px;
+text-align:left;
+max-height:300px;
+overflow-y:auto;
+line-height:1.6;
+}
+
+/* SCROLLBAR */
+
+.lyrics-box::-webkit-scrollbar{
+width:6px;
+}
+
+.lyrics-box::-webkit-scrollbar-thumb{
+background:#444;
+border-radius:4px;
 }
